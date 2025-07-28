@@ -1,0 +1,26 @@
+body {
+  background-color: #fdf6f0;
+}
+
+header {
+  margin: 20px 80px 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 50px;
+}
+
+header nav a {
+  font-weight: 400;
+  font-size: 20px;
+  color: #4b3b2a;
+  text-decoration: none;
+}
+header a img {
+  width: 150px;
+  height: 55px;
+}
