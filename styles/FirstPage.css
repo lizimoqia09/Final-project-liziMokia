@@ -1,7 +1,6 @@
 body {
-  background-color: #fdf6f0;
+  color: rgb(255, 202, 138);
 }
-
 header {
   margin: 20px 80px 20px 80px;
   display: flex;
@@ -23,4 +22,28 @@ header nav a {
 header a img {
   width: 150px;
   height: 55px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+section h1 {
+  font-size: 42px;
+  color: #4b3b2a;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+section p {
+  font-size: 18px;
+  color: #3a3a3a;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
