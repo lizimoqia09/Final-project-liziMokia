@@ -1,7 +1,11 @@
+html,
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
   background-color: #fdf6f0;
 }
-
 header {
   margin: 20px 80px 20px 80px;
   display: flex;
@@ -23,4 +27,88 @@ header nav a {
 header a img {
   width: 150px;
   height: 55px;
+}
+
+section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  color: #4b3b2a;
+  margin-bottom: 5px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 25px;
+}
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+section div {
+  flex: 1 1 300px;
+  min-width: 280px;
+  background-color: #f2eee9;
+  padding: 20px;
+  border-radius: 10px;
+}
+ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 5px;
+}
+li {
+  margin: 7px;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section:last-of-type {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1060px) {
+  .nav-burger {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .burger {
+    display: block;
+  }
 }
