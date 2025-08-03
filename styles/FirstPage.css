@@ -1,11 +1,21 @@
+html,
 body {
-  color: rgb(255, 202, 138);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #0f0151;
 }
+
 header {
-  margin: 20px 80px 20px 80px;
+  margin: 15px 10px 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 620px;
 }
 
 header nav {
@@ -16,34 +26,49 @@ header nav {
 header nav a {
   font-weight: 400;
   font-size: 20px;
-  color: #4b3b2a;
+  color: black;
   text-decoration: none;
 }
 header a img {
   width: 150px;
   height: 55px;
 }
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
 
-  max-width: 800px;
-  margin: 0 auto;
+section div {
+  background-color: white;
+  width: 600px;
+  margin: 20px;
+  border-radius: 12px;
   padding: 20px;
 }
 section h1 {
+  font-family: "BPG Nino Mtavruli Bold", sans-serif;
   font-size: 42px;
-  color: #4b3b2a;
+  color: black;
   margin-bottom: 20px;
-  font-weight: 600;
+  /* font-weight: 600px; */
 }
 section p {
   font-size: 18px;
-  color: #3a3a3a;
-  line-height: 1.6;
+  color: black;
+  line-height: 2;
   margin-bottom: 20px;
+}
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+@media (max-width: 960px) {
+  .nav-burger {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .burger {
+    display: block;
+  }
 }
