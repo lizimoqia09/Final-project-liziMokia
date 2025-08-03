@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  margin: 20px 80px 20px 80px;
+  margin: 15px 10px 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,10 +23,6 @@ header nav a {
 header a img {
   width: 150px;
   height: 55px;
-}
-body {
-  background-color: #fdf6f0;
-  font-family: Arial, sans-serif;
 }
 
 form {
@@ -65,7 +61,7 @@ input[type="tel"]:focus {
 
 input[type="submit"] {
   margin-top: 20px;
-  background-color: #4b3b2a;
+  background-color: black;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -76,15 +72,15 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #6a543a;
+  background-color: rgb(0, 152, 247);
 }
 .burger {
   display: none;
   font-size: 28px;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 12px;
 }
-@media (max-width: 1060px) {
+@media (max-width: 960px) {
   .nav-burger {
     display: none;
     flex-direction: column;

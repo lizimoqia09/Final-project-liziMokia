@@ -4,13 +4,17 @@ body {
   padding: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: #fdf6f0;
+  background-color: #0f0151;
 }
 header {
-  margin: 20px 80px 20px 80px;
+  margin: 15px 10px 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 620px;
 }
 
 header nav {
@@ -29,9 +33,11 @@ header a img {
   height: 55px;
 }
 
-section {
+.aboutme {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 10px;
+  height: 300px;
+  width: 590px;
   padding: 30px;
   background-color: #fff;
   border-radius: 12px;
@@ -45,7 +51,7 @@ h2 {
 }
 
 h1 {
-  text-align: center;
+  background-color: white;
   font-size: 36px;
   margin-bottom: 20px;
 }
@@ -66,7 +72,7 @@ section {
 section div {
   flex: 1 1 300px;
   min-width: 280px;
-  background-color: #f2eee9;
+  background-color: #fff018;
   padding: 20px;
   border-radius: 10px;
 }
@@ -99,7 +105,7 @@ li {
     flex-direction: column;
   }
 }
-@media (max-width: 1060px) {
+@media (max-width: 960px) {
   .nav-burger {
     display: none;
     flex-direction: column;
