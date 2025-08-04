@@ -14,33 +14,37 @@
         <a href="./AboutMe.html">ჩემს შესახებ</a>
         <a href="./Works.html">ნამუშევრები</a>
         <a href="./Certificates.html">სერტიფიკატები</a>
-        <a href="#" style="color: #a2643d">კონტაქტი</a>
+        <a href="#" style="color: crimson">კონტაქტი</a>
       </nav>
       <div class="burger">&#9776;</div>
       <a href="https://www.tbceducation.ge/" target="_blank">
         <img src="../images/თიბისი.png" alt="" />
       </a>
     </header>
+
     <section>
-      <form action="/action_page.php">
-        <label for="fname">სახელი:</label><br />
-        <input type="text" id="fname" name="fname" value="" /><br />
+      <h1>გამიზიარე შენი აზრი!</h1>
+      <div>
+        <p>მომწერე შენს კითხვებზე, იდეებსა და შენიშვნებზე</p>
+        <form action="/action_page.php">
+          <label for="fname">სახელი:</label><br />
+          <input type="text" id="fname" name="fname" value="" /><br />
 
-        <label for="lname">გვარი:</label><br />
-        <input type="text" id="lname" name="lname" value="" /><br /><br />
+          <label for="lname">გვარი:</label><br />
+          <input type="text" id="lname" name="lname" value="" /><br /><br />
 
-        <label for="phone">ტელეფონის ნომერი:</label><br />
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{9}"
-          maxlength="9"
-          inputmode="numeric"
-          required
-        />
-        <input type="submit" value="Submit" />
-      </form>
+          <label for="feedback">შენი აზრი პროექტზე:</label><br />
+          <textarea
+            id="feedback"
+            name="feedback"
+            rows="5"
+            placeholder="გთხოვ, დაწერე შენი აზრი აქ..."
+          ></textarea
+          ><br /><br />
+
+          <input type="submit" value="გაგზავნა" />
+        </form>
+      </div>
     </section>
   </body>
 </html>

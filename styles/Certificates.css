@@ -1,12 +1,21 @@
+html,
 body {
-  background-color: #fdf6f0;
+  margin: 0;
+  padding: 0;
+  min-width: 600px;
+  box-sizing: border-box;
+  background-color: #0f0151;
 }
 
 header {
-  margin: 20px 80px 20px 80px;
+  margin: 15px 10px 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px;
+  min-width: 620px;
 }
 
 header nav {
@@ -23,4 +32,78 @@ header nav a {
 header a img {
   width: 150px;
   height: 55px;
+}
+h1 {
+  color: white;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+div {
+  background-color: white;
+}
+
+.cards {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.card h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #343232;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 24px;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  color: #636060;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 8px;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+@media (max-width: 960px) {
+  .nav-burger {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .burger {
+    display: block;
+  }
 }

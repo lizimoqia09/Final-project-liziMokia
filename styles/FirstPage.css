@@ -33,10 +33,15 @@ header a img {
   width: 150px;
   height: 55px;
 }
-
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 600px;
+  margin-top: 100px;
+}
 section div {
   background-color: white;
-  width: 600px;
   margin: 20px;
   border-radius: 12px;
   padding: 20px;
@@ -46,7 +51,6 @@ section h1 {
   font-size: 42px;
   color: black;
   margin-bottom: 20px;
-  /* font-weight: 600px; */
 }
 section p {
   font-size: 18px;
